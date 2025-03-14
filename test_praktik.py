@@ -1,3 +1,4 @@
+"""VARIABLE"""
 #soal nomor 1
 data_string = "john"
 print("nama :",data_string)
@@ -26,6 +27,7 @@ nama = "alice"
 umur = 25
 print(f"Nama saya {nama} dan saya berumur {umur} tahun")
 
+"""OPERASI ARITMATIKA"""
 #luas alas seigitiga
 ti = 25
 alas = 10
@@ -74,25 +76,47 @@ sisa = angka1 % angka2
 
 print("sisa dari", angka1, "dibagi", angka2, "adalah", sisa)
 
+"""KOMPARASI"""
+#Menentukan Bilangan Positif dan Negatif
+bilangan = float(input("Masukan sebuah angka : "))
 
+if bilangan > 0:
+    print("Ini bilangan positif")
+elif bilangan < 0:
+    print("Bilangan ini negatif")
+else:
+    print("bilangan ini adalah nol")
 
+#Membandingkan dua bilangan bulat (Int)
+bilangan = int(input("Masukan bilangan bulat :"))
+bilangan2 = int(input("Masukan bilangan bulat :"))
 
+bilangan0 = bilangan > bilangan2
+print(bilangan,'>',bilangan2, '=', bilangan0)
 
+#Cek kelipatan 5
+bilangan = int(input("Masukan sebuah bilangan bulat :"))
 
+if bilangan % 5 == 0:
+    print("bilangan kelipatan lima")
+else:
+    print("bukan kelipatan lima")
 
+#cek usia dewasa
+umur =int(input("Masukan usia Anda :"))
 
+if umur >= 18:
+    print("Anda sudah memasuki usia dewasa.")
+else:
+    print("Anda belum dewasa.")
 
+#Validasi nilai ujian
+nilai =int(input("Masukan hasil Nilai Ujian Anda :"))
+if 0 <= nilai <= 100:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    if nilai >= 76:
+        print("Nilai Anda di atas KKM")
+    else:
+        print("Nilai Anda dibawah KKM")
+else:
+    print("Nilai yang dimasukan tidak valid harap masukkan nilai antara 0")
