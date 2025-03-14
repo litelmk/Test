@@ -120,3 +120,84 @@ if 0 <= nilai <= 100:
         print("Nilai Anda dibawah KKM")
 else:
     print("Nilai yang dimasukan tidak valid harap masukkan nilai antara 0")
+
+"""OPERATOR LOGIKA ATAU BOOLEAN"""
+# Cek usia Remaja
+umur = int(input("Masukan umur anda"))
+if 13 <= umur <= 19:
+    print("Anda Termasuk Remaja.")
+else:
+    print("Anda bukan Remaja.")
+
+#Cek bilangan positif genap (HAMPIR BENAR)
+bilangan = float(input("Masukan bilangan genap :"))
+if bilangan % 2 == 0:
+    print("ini bilangan genap.")
+else:
+    print("bukan bilangan genap.")
+ #CEK BILANGAN POSITIF GENAP (BENAR)
+ #Cek bilangan positif genap
+try:
+    bilangan = int(input("Masukkan bilangan bulat: "))
+
+    if bilangan > 0 and bilangan % 2 == 0:
+        print(f"{bilangan} adalah bilangan positif dan genap.")
+    elif bilangan > 0 and bilangan % 2 != 0:
+        print(f"{bilangan} adalah bilangan positif tetapi ganjil.")
+    elif bilangan == 0:
+        print("0 adalah bilangan netral dan genap.")
+    else:
+        print(f"{bilangan} adalah bilangan negatif.")
+except ValueError:
+    print("Input tidak valid. Harap masukkan bilangan bulat.")
+
+#login dengan dua kondisi
+username = str(input("Masukan nama: "))
+password = str(input("Masukan pasword: "))
+
+if username == "admin" and password == "12345":
+    print("Selamat Datang!")
+elif username != "admin":
+    print("Nama salah harap ulangi.")
+else:
+    print("Password Invalid, silahkan coba lagi.")
+
+# Cek lulus atau remedial (AI)
+input_nilai = input("Masukan Nilai anda disini (Angka 0-100 atau huruf F-A): ")
+
+nilai_huruf = {
+    "A":90,
+    "B":80,
+    "C":70,
+    "D":60,
+    "E":50,
+    "F":40
+}
+
+try:
+    nilai = int(input_nilai)
+    if 0 <= nilai <= 100:
+        if nilai >= 75:
+            print("Lulus")
+        else:
+            print("Tidak Lulus")
+    else:
+        print("Nilai Invalid, Harap masukan angka 0-100")
+except ValueError:
+
+    nilai = nilai_huruf.get(input_nilai.upper())
+    if nilai is not None:
+        if nilai >= 75:
+            print("Lulus")
+        else:
+            print("Tidak Lulus")
+    else:
+        print("Nilai Tidak Valid, Harap Masukan Huruf F-A")
+
+
+# Tahun Kabisat
+tahun = int(input("Masukan Tahun Kabisat"))
+if (tahun % 400 == 0) or (tahun % 100 != 0 and tahun % 4 == 0):
+    print(f"{tahun} adalah tahun kabisat.")
+else:
+    print(f"{tahun} bukan tahun kabisat")
