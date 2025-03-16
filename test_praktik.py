@@ -104,7 +104,6 @@ else:
 
 #cek usia dewasa
 umur =int(input("Masukan usia Anda :"))
-
 if umur >= 18:
     print("Anda sudah memasuki usia dewasa.")
 else:
@@ -201,3 +200,33 @@ if (tahun % 400 == 0) or (tahun % 100 != 0 and tahun % 4 == 0):
     print(f"{tahun} adalah tahun kabisat.")
 else:
     print(f"{tahun} bukan tahun kabisat")
+
+"""+++BITWISE+++"""
+
+# Operator AND
+a = 12
+b = 5
+c = a & b
+print('Nilai :', c, ', Binary :', format(c, '08b'))
+
+# Operator OR
+a = 12
+b = 5
+c = a | b
+print('Nilai :', c, ', Binary :', format(c, '08b'))
+
+# Operator XOR
+c = a ^ b
+print('Nilai :', c, ', Binary :', format(c, '08b'))
+
+# Operator NOT
+c = ~a
+print('Nilai :', c, ', Binary :', format(c, '08b'))
+
+# Shift Right
+c = a >> 1
+print('Nilai :', c, ', Binary :', format(c, '08b'))
+
+# Shift Left
+c = a << 1
+print('Nilai :', c, ', Binary :', format(c, '08b'))
