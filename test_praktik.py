@@ -230,3 +230,29 @@ print('Nilai :', c, ', Binary :', format(c, '08b'))
 # Shift Left
 c = a << 1
 print('Nilai :', c, ', Binary :', format(c, '08b'))
+
+"""======OPERATOR ASSIGMENT======"""
+# Penjumlahan Assigment
+x = 10
+x += 5
+print('Hasil =', x)
+
+#Pengurangan Assigment
+y = 10
+y -= 8
+print('Hasil =', y)
+
+# Perkalian Assigment
+a = 6
+a *= 4
+print('Hasil =', a)
+
+# Pembagian Assigment
+b = 20
+b /= 5
+print('Hasil =', b)
+
+# Modulus Assigment
+c = 17
+c %= 3
+print('Hasil =', c)
